@@ -1,0 +1,92 @@
+@import url(./variables.css);
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: var(--primary-color);
+    /* background-color: var(--background-color); */
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-size: var(--poppins);
+}
+.align-center{
+    display: flex;
+    align-items: center;
+}
+header {
+    height: 141px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 80px 0 80px;
+    /* align-items: center; */
+
+    div.company{
+        display: flex;
+        gap: 20px;
+
+        .company_logo{
+            width: 36px;
+            height: 31px;
+            fill: var(--secondary-color);
+        }
+        p {
+            font-size: 22px;
+            font-weight: 600;
+        }
+    }
+
+    nav {
+        ul{
+            display: flex;
+            gap: 20px;
+            list-style: none;
+
+            a {
+                text-decoration: none;
+                color: var(--secondary-color);
+                font-weight: 300px;
+            }
+            a:hover{
+                color: var(--secondary-color);
+                transition-duration: 600ms;
+            }
+            span {
+                font-weight: 300px;
+                color: var(--basic-color);
+            }
+        }
+    }
+}
+/* .align-center {
+    display: flex;
+    align-content: center;
+}
+.jistify-center {
+    display: flex;
+    justify-content: center;
+}
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+ height: 100px;
+ background-color: var(--header-color);
+ color: var(--text-color);
+ font-size: var(--font-size);
+}
+
+main {
+    height: 500px;
+    background-color: var(--main-color);
+}
+
+footer {
+    height: 200px;
+    background-color: var(--footer-color);
+} */
