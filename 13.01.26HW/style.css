@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div.color{
+    width: 200px;
+    height: 600px;
+    background-color: black;
+    border-radius: 15px;
+}
+div.light {
+    width: 200px;
+    height: 200px;
+    border-radius: 50px;
+}
+ 
+div.red {
+    background-color: rgba(255, 0, 0, 0.329);
+    animation: red_light 4s infinite;
+}
+div.yellow {
+    background-color: rgba(255, 255, 0, 0.321);
+    animation: yellow_light 4s infinite;
+    animation-delay: 1s;
+}
+div.green {
+    background-color: rgba(0, 128, 0, 0.327);
+    animation: green_light 4s infinite;
+    animation-delay: 2s;
+}
+
+
+
+
+@keyframes red_light {
+    0%,
+    50% {
+        background-color: rgba(255, 0, 0, 0.329);
+    }
+    70% {
+        background-color: red;
+    }
+    100%{
+        background-color: rgba(255, 0, 0, 0.329);
+    }
+}
+@keyframes yellow_light {
+    0%,
+    50% {
+        background-color: rgba(255, 255, 0, 0.321);
+    }
+    70% {
+        background-color: yellow;
+    }
+    100%{
+        background-color: rgba(255, 255, 0, 0.321);
+    }
+}
+@keyframes green_light {
+    0%,
+    50% {
+        background-color: rgba(0, 128, 0, 0.327);
+    }
+    70% {
+        background-color: green;
+    }
+    100%{
+        background-color: rgba(0, 128, 0, 0.327);
+    }
+}
